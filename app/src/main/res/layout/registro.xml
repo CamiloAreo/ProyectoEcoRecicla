@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#917D65"
+        tools:layout_editor_absoluteX="-109dp"
+        tools:layout_editor_absoluteY="-245dp">
+
+        <View
+            android:id="@+id/EcoReciclalogo_img"
+            android:layout_width="113dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="63dp"
+            android:background="@drawable/ecoreciclalogo" />
+
+        <View
+            android:id="@+id/EcoReciclalogo_lbl"
+            android:layout_width="179dp"
+            android:layout_height="34dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="172dp"
+            android:layout_marginTop="101dp"
+            android:background="@drawable/ecoreciclamarca" />
+
+        <TextView
+            android:id="@+id/nombre_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="654dp"
+            android:text="Nombre:"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+
+        <EditText
+            android:id="@+id/nombre_txt"
+            android:layout_width="320dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="604dp"
+            android:background="@color/white"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/email_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="547dp"
+            android:text="Correo Electrónico:"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/email_txt"
+            android:layout_width="320dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="499dp"
+            android:background="@color/white"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/usuario_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="448dp"
+            android:text="Usuario:"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/usuario_txt"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="398dp"
+            android:background="@color/white"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/contrasena_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="346dp"
+            android:text="Contraseña:"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/contrasena_txt"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="294dp"
+            android:background="@color/white"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/confirmaContrasena_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="244dp"
+            android:text="Confirma Contraseña:"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/confirmaContrasena_txt"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="193dp"
+            android:background="@color/white"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="120dp"
+            android:backgroundTint="#149832"
+            android:text="REGISTRARTE"
+            android:textSize="24sp"
+            app:cornerRadius="20dp" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

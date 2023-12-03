@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/InicioDeSesion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#917D65"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="67dp">
+
+        <View
+            android:id="@+id/EcoReciclalogo_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/ecoreciclalogo" />
+
+        <View
+            android:id="@+id/EcoReciclalogo_lbl"
+            android:layout_width="238dp"
+            android:layout_height="42dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="141dp"
+            android:layout_marginTop="86dp"
+            android:background="@drawable/ecoreciclamarca" />
+
+        <View
+            android:id="@+id/tipsLogo_img"
+            android:layout_width="351dp"
+            android:layout_height="58dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/plasticos_titulo" />
+
+        <TextView
+            android:id="@+id/mensaje_lbl"
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="548dp"
+            android:text="Cantidad de kilos que quieres registrar"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/cantidad_txt"
+            android:layout_width="320dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="483dp"
+            android:background="@color/white"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/guardar_btn"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="226dp"
+            android:layout_marginBottom="420dp"
+            android:backgroundTint="#149832"
+            android:text="GUARDAR"
+            android:textSize="20sp"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/borrar_btn"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="420dp"
+            android:backgroundTint="@color/black"
+            android:text="BORRAR"
+            android:textSize="18sp"
+            app:cornerRadius="10dp" />
+
+        <TextView
+            android:id="@+id/historial_lbl"
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginBottom="359dp"
+            android:text="Historial Reciente:"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <View
+            android:id="@+id/grafica_img"
+            android:layout_width="287dp"
+            android:layout_height="193dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="545dp"
+            android:background="@drawable/grafica_plasticos" />
+
+        <TextView
+            android:id="@+id/volver_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="129dp"
+            android:layout_marginBottom="53dp"
+            android:text="Volver"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/volver_btn"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="294dp"
+            android:layout_marginBottom="34dp"
+            android:backgroundTint="#149832"
+            app:cornerRadius="20dp" />
+
+        <View
+            android:id="@+id/volver_img"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="797dp"
+            android:background="@drawable/volver_logo" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

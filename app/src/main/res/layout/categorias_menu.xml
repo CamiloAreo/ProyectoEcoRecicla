@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/InicioDeSesion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#917D65"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="67dp">
+
+        <View
+            android:id="@+id/EcoReciclalogo_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/ecoreciclalogo" />
+
+        <View
+            android:id="@+id/EcoReciclalogo_lbl"
+            android:layout_width="238dp"
+            android:layout_height="42dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="141dp"
+            android:layout_marginTop="86dp"
+            android:background="@drawable/ecoreciclamarca" />
+
+
+        <Button
+            android:id="@+id/papel_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="223dp"
+            android:layout_marginBottom="480dp"
+            android:backgroundTint="#149832"
+            android:src="@drawable/ecoreciclalogo"
+            android:text="Papel"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/plasticos_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="480dp"
+            android:backgroundTint="#149832"
+            android:text="Plásticos"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/vidrio_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="222dp"
+            android:layout_marginBottom="301dp"
+            android:backgroundTint="#149832"
+            android:text="Vidrio"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/metales_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="302dp"
+            android:backgroundTint="#149832"
+            android:text="Metales"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/agregar_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="129dp"
+            android:layout_marginBottom="127dp"
+            android:backgroundTint="#149832"
+            android:text="Agregar Nueva Categoría"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:cornerRadius="20dp" />
+
+        <View
+            android:id="@+id/tipsLogo_img"
+            android:layout_width="351dp"
+            android:layout_height="58dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/categorias_titulo" />
+
+        <TextView
+            android:id="@+id/volver_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="129dp"
+            android:layout_marginBottom="53dp"
+            android:text="Volver"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/volver_btn"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="294dp"
+            android:layout_marginBottom="34dp"
+            android:backgroundTint="#149832"
+            app:cornerRadius="20dp" />
+
+        <View
+            android:id="@+id/volver_img"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="797dp"
+            android:background="@drawable/volver_logo" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
