@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <RelativeLayout
@@ -33,28 +33,75 @@
             android:layout_marginTop="86dp"
             android:background="@drawable/ecoreciclamarca" />
 
-        <EditText
-            android:id="@+id/mensaje_txt"
-            android:layout_width="359dp"
-            android:layout_height="381dp"
-            android:layout_alignParentStart="true"
+
+        <Button
+            android:id="@+id/papel_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="28dp"
-            android:layout_marginBottom="236dp"
-            android:background="@color/white"
-            android:text="1. Protege tus manos al manipular elementos cortantes como vidrios o elementos filosos. \n 2. Limpia los envases plásticos antes de almacenarlos para evitar malos olores y una mejor disposición final. \n 3. El aceite usado se debe disponer en sitios especializados, usa el siguiente link para conocer el mas cercano a ti. "
+            android:layout_marginEnd="223dp"
+            android:layout_marginBottom="480dp"
+            android:backgroundTint="#149832"
+            android:src="@drawable/ecoreciclalogo"
+            android:text="¿Reciclas por primera vez?"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="22sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/plasticos_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="480dp"
+            android:backgroundTint="#149832"
+            android:text="Ten Cuidado Al Reciclar..."
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/vidrio_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="222dp"
+            android:layout_marginBottom="301dp"
+            android:backgroundTint="#149832"
+            android:text="Elementos No Reciclables"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/metales_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="302dp"
+            android:backgroundTint="#149832"
+            android:text="Mejores Prácticas"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:cornerRadius="20dp" />
+
+
 
         <View
             android:id="@+id/tipsLogo_img"
-            android:layout_width="357dp"
-            android:layout_height="64dp"
+            android:layout_width="189dp"
+            android:layout_height="56dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="28dp"
-            android:layout_marginTop="176dp"
-            android:background="@drawable/tip1_titulo" />
+            android:layout_marginLeft="107dp"
+            android:layout_marginTop="178dp"
+            android:background="@drawable/tips_titulo" />
 
         <TextView
             android:id="@+id/volver_lbl"
@@ -77,18 +124,10 @@
             android:layout_marginEnd="294dp"
             android:layout_marginBottom="34dp"
             android:backgroundTint="#149832"
-            app:cornerRadius="20dp" />
-
-        <View
-            android:id="@+id/volver_img"
-            android:layout_width="46dp"
-            android:layout_height="46dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="57dp"
-            android:layout_marginTop="797dp"
-            android:background="@drawable/volver_logo" />
+            app:cornerRadius="20dp"
+            app:icon="@drawable/return_icon"/>
 
     </RelativeLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
