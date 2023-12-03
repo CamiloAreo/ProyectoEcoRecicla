@@ -1,12 +1,12 @@
 package com.example.ecorecicla;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -16,16 +16,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Tip2 extends AppCompatActivity {
+public class Tip4 extends AppCompatActivity {
     private List<String> tipsList;
-    private TextView tip2;
+    private TextView tip4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tip_2);
+        setContentView(R.layout.tip_4);
 
-        Button volver = findViewById(R.id.tip2_volver_btn);
+        Button volver = findViewById(R.id.tip4_volver_btn);
         final Intent intent = new Intent(this, TipsMenu.class);
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +34,7 @@ public class Tip2 extends AppCompatActivity {
             }
         });
 
-        tip2 = findViewById(R.id.tip2_mensaje_txt);
+        tip4 = findViewById(R.id.tip4_mensaje_txt);
         tipsList = new ArrayList<>();
 
         leerTips();
@@ -43,18 +43,18 @@ public class Tip2 extends AppCompatActivity {
 
     private void mostrarTipAleatorio() {
         if (tipsList.isEmpty()) {
-            tip2.setText("No hay consejos disponibles.");
+            tip4.setText("No hay consejos disponibles.");
             return;
         }
 
         Random random = new Random();
         int index = random.nextInt(tipsList.size());
         String tip = tipsList.get(index);
-        tip2.setText(tip);
+        tip4.setText(tip);
     }
 
     private void leerTips() {
-        File file = new File(getFilesDir(), "tip2.txt");
+        File file = new File(getFilesDir(), "tip4.txt");
 
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(file));

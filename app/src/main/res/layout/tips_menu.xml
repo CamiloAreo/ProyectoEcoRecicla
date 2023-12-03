@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    tools:context=".TipsMenu">
 
     <RelativeLayout
         android:id="@+id/InicioDeSesion"
@@ -35,13 +36,13 @@
 
 
         <Button
-            android:id="@+id/papel_btn"
+            android:id="@+id/tip1_btn"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="223dp"
-            android:layout_marginBottom="480dp"
+            android:layout_marginBottom="396dp"
             android:backgroundTint="#149832"
             android:src="@drawable/ecoreciclalogo"
             android:text="¿Reciclas por primera vez?"
@@ -50,13 +51,13 @@
             app:cornerRadius="20dp" />
 
         <Button
-            android:id="@+id/plasticos_btn"
+            android:id="@+id/tip2_btn"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="42dp"
-            android:layout_marginBottom="480dp"
+            android:layout_marginBottom="395dp"
             android:backgroundTint="#149832"
             android:text="Ten Cuidado Al Reciclar..."
             android:textAlignment="center"
@@ -64,34 +65,33 @@
             app:cornerRadius="20dp" />
 
         <Button
-            android:id="@+id/vidrio_btn"
+            android:id="@+id/tip3_btn"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="222dp"
-            android:layout_marginBottom="301dp"
+            android:layout_marginBottom="217dp"
             android:backgroundTint="#149832"
             android:text="Elementos No Reciclables"
             android:textAlignment="center"
             android:textSize="19sp"
             app:cornerRadius="20dp" />
 
+
         <Button
-            android:id="@+id/metales_btn"
+            android:id="@+id/tip4_btn"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="43dp"
-            android:layout_marginBottom="302dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="216dp"
             android:backgroundTint="#149832"
             android:text="Mejores Prácticas"
             android:textAlignment="center"
             android:textSize="22sp"
             app:cornerRadius="20dp" />
-
-
 
         <View
             android:id="@+id/tipsLogo_img"
@@ -116,7 +116,7 @@
             android:textSize="26sp" />
 
         <Button
-            android:id="@+id/volver_btn"
+            android:id="@+id/tips_volver_btn"
             android:layout_width="74dp"
             android:layout_height="74dp"
             android:layout_alignParentEnd="true"

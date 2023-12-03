@@ -13,6 +13,51 @@
         android:theme="@style/Theme.EcoRecicla"
         tools:targetApi="31">
         <activity
+            android:name=".CategoriasMenu"
+            android:exported="false" />
+        <activity
+            android:name=".EstadisticasMenu"
+            android:exported="false" />
+        <activity
+            android:name=".EstadisticasCategoria"
+            android:exported="false" />
+        <activity
+            android:name=".InicioDeSesion"
+            android:exported="false" />
+        <activity
+            android:name=".OlvidoNotificacion1"
+            android:exported="false" />
+        <activity
+            android:name=".OlvidoNotificacion2"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaPrincipal"
+            android:exported="false" />
+        <activity
+            android:name=".PlasticosCategoria"
+            android:exported="false" />
+        <activity
+            android:name=".Registro"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroExitoso"
+            android:exported="false" />
+        <activity
+            android:name=".Tip1"
+            android:exported="false" />
+        <activity
+            android:name=".Tip2"
+            android:exported="false" />
+        <activity
+            android:name=".Tip3"
+            android:exported="false" />
+        <activity
+            android:name=".Tip4"
+            android:exported="false" />
+        <activity
+            android:name=".TipsMenu"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

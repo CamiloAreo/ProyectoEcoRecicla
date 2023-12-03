@@ -2,6 +2,7 @@ package com.example.ecorecicla;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import java.io.File;
@@ -14,6 +15,33 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Intent inicialIntent = new Intent(this, InicioDeSesion.class);
+        startActivity(inicialIntent);
+
+        File fileDatos = new File(getFilesDir(), "datos.txt");
+        if (!fileDatos.exists()) {
+            try {
+                FileWriter writer = new FileWriter(fileDatos);
+                writer.append("root,root@root.com,toor,TOOR\n");
+                writer.flush();
+                writer.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        File fileCorreos = new File(getFilesDir(), "correosOlvidos.txt");
+        if (!fileCorreos.exists()) {
+            try {
+                FileWriter writer = new FileWriter(fileCorreos);
+                writer.append("root,root@root.com,toor,TOOR\n");
+                writer.flush();
+                writer.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
 
         // Tips 1
         File file1 = new File(getFilesDir(), "tip1.txt");
@@ -110,5 +138,6 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 }
