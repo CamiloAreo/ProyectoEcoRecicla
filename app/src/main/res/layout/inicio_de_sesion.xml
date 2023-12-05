@@ -76,7 +76,8 @@
             android:layout_marginStart="42dp"
             android:layout_marginBottom="222dp"
             android:background="@color/white"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:inputType="textPassword"/>
 
         <TextView
             android:id="@+id/olvidaste_txv"

@@ -50,13 +50,12 @@ public class MainActivity extends AppCompatActivity {
 
             // Lista de Tips 1
             String[] tips = {
-                    "Separa/limpia la basura orgánica de los envases.",
                     "Separa los envases dependiendo de su material: plásticos, vidrio, aluminio o metal.",
                     "Reutiliza las bolsas de plástico, estas pueden usarse una y otra vez para cargar tus comprar en el mercado.",
                     "Los desechos orgánicos puedes reciclarlos, si tienes, en tu propia compostera para tus plantas."
             };
             // Recorrer el array y agregar los consejos al archivo
-            writer.append("¿Reciclas por primera vez?\n");
+            writer.append("Separa/limpia la basura orgánica de los envases.\n");
             for (String tip : tips) {
                 writer.append(tip).append("\n");
             }
@@ -73,14 +72,13 @@ public class MainActivity extends AppCompatActivity {
 
             // Lista de Tips 2
             String[] tips = {
-                    "Protege tus manos al manipular elementos cortantes como vidrios o elementos filosos.",
                     "Limpia los envases plásticos antes de almacenarlos para evitar malos olores y una mejor disposición final.",
                     "Evita el contacto con material orgánico en descomposición; puede causar Hepatitis, Tétanos, Rabia, Leptospirosis, entre otros.",
                     "Protege tus vías respiratorias al tener contacto con recipientes que contengan líquidos con restos químicos",
                     "El aceite usado se debe disponer en sitios especializados. Consulta con la empresa recolectora de desechos de tu sector para más información"
             };
             // Recorrer el array y agregar los consejos al archivo
-            writer.append("Ten Cuidado Al Reciclar...\n");
+            writer.append("Protege tus manos al manipular elementos cortantes como vidrios o elementos filosos.\n");
             for (String tip : tips) {
                 writer.append(tip).append("\n");
             }
@@ -100,11 +98,10 @@ public class MainActivity extends AppCompatActivity {
                     "Los vidrios de las ventanas de los automóviles contienen plomo Por lo cual No puede mezclarse con el vidrio de botellas y otros objetos.",
                     "Las lámparas tanto incandescentes como de bajo consumo suelen considerarse no reciclables por su mezcla de materiales (plástico, metal, vidrio).",
                     "Los diferentes tipos de cintas adhesivas (aislante, de enmascarar, de embalar, americana) no pueden reciclarse. Están fabricadas a base de caucho sin tratar",
-                    "El papel que se utiliza para imprimir faxes y para imprimir recibos de tarjeta de crédito no es reciclable porque es papel térmico",
-                    "Las Fotos No pueden ser recicladas por la capa plástica que poseen."
+                    "El papel que se utiliza para imprimir faxes y para imprimir recibos de tarjeta de crédito no es reciclable porque es papel térmico"
             };
             // Recorrer el array y agregar los consejos al archivo
-            writer.append("Elementos No Reciclables\n");
+            writer.append("Las Fotos No pueden ser recicladas por la capa plástica que poseen.\n");
             for (String tip : tips) {
                 writer.append(tip).append("\n");
             }
@@ -122,14 +119,13 @@ public class MainActivity extends AppCompatActivity {
             // Lista de Tips 4
             String[] tips = {
                     "Encuentre un lugar apropiado para almacenar los diferente tipos de residuos.",
-                    "Recicle todo el vidrio o plástico que tenga.",
                     "Reutilizar los productos que se quieren desechar, si aún están en buen estado y reutilizar el papel lo más que se pueda.",
                     "Evitar las bolsas desechables y llevar tus propias bolsas al mercado",
                     "Comprar material a empresas con programas de sostenibilidad y reciclaje.",
                     "Reciclar todo el vidrio o plástico que tenga, reciclar la ropa, donar juguetes, reciclar aparatos electrónicos y reciclar el papel."
             };
             // Recorrer el array y agregar los consejos al archivo
-            writer.append("Mejores Prácticas\n");
+            writer.append("Recicle todo el vidrio o plástico que tenga.\n");
             for (String tip : tips) {
                 writer.append(tip).append("\n");
             }

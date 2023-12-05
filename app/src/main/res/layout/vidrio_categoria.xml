@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PlasticosCategoria">
+    tools:context=".VidrioCategoria">
 
     <RelativeLayout
         android:id="@+id/InicioDeSesion"
@@ -42,7 +42,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="27dp"
             android:layout_marginTop="180dp"
-            android:background="@drawable/plasticos_titulo" />
+            android:background="@drawable/vidrio_titulo" />
 
         <TextView
             android:id="@+id/mensaje_lbl"
@@ -58,7 +58,7 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/plasticos_cantidad_txt"
+            android:id="@+id/vidrio_cantidad_txt"
             android:layout_width="320dp"
             android:layout_height="42dp"
             android:layout_alignParentStart="true"
@@ -70,7 +70,7 @@
             android:inputType="number"/>
 
         <Button
-            android:id="@+id/plasticos_guardar_btn"
+            android:id="@+id/vidrio_guardar_btn"
             android:layout_width="142dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -83,7 +83,7 @@
             app:cornerRadius="10dp" />
 
         <Button
-            android:id="@+id/plasticos_borrar_btn"
+            android:id="@+id/vidrio_borrar_btn"
             android:layout_width="142dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -130,7 +130,7 @@
             android:textSize="26sp" />
 
         <Button
-            android:id="@+id/plasticos_volver_btn"
+            android:id="@+id/vidrio_volver_btn"
             android:layout_width="74dp"
             android:layout_height="74dp"
             android:layout_alignParentEnd="true"
