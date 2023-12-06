@@ -124,6 +124,7 @@
             android:layout_marginStart="42dp"
             android:layout_marginBottom="294dp"
             android:background="@color/white"
+            android:inputType="textPassword"
             android:textAlignment="center" />
 
         <TextView
@@ -147,6 +148,7 @@
             android:layout_marginStart="42dp"
             android:layout_marginBottom="193dp"
             android:background="@color/white"
+            android:inputType="textPassword"
             android:textAlignment="center" />
 
         <Button
@@ -185,7 +187,5 @@
             android:backgroundTint="#149832"
             app:cornerRadius="20dp"
             app:icon="@drawable/return_icon" />
-
-
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -135,5 +135,20 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        // Crear archivo para registro de metales
+        File fileMetales = new File(getFilesDir(), "metalesGuardados.txt");
+        try {
+            FileWriter writer = new FileWriter(fileMetales);
+            writer.append("20/10/2023 08:10 AM, 2.5\n");
+            writer.append("22/10/2023 09:00 PM, 6.8\n");
+            writer.append("24/10/2023 03:00 PM, 4.1\n");
+            writer.append("25/10/2023 12:20 PM, 10.3\n");
+            writer.append("27/10/2023 01:30 PM, 1.6\n");
+            writer.flush();
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
