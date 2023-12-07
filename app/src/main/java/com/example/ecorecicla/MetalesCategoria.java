@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -25,7 +26,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 public class MetalesCategoria extends AppCompatActivity {
 
@@ -43,7 +43,7 @@ public class MetalesCategoria extends AppCompatActivity {
         Button metalesGuardar = findViewById(R.id.metales_guardar_btn);
         Button metalesBorrar = findViewById(R.id.metales_borrar_btn);
         EditText metalesEditText = findViewById(R.id.metales_cantidad_txt);
-        metalesTableLayout = findViewById(R.id.Metales_TableLayout);
+        metalesTableLayout = findViewById(R.id.metales_TableLayout);
 
         // Carga Archivo Metales
         File fileMetales = new File(getFilesDir(), "metalesGuardados.txt");
@@ -61,8 +61,10 @@ public class MetalesCategoria extends AppCompatActivity {
                     boolean cantidadGuardada = guardarCantidad(fecha, metalesEditText.getText().toString());
                     if (cantidadGuardada) {
                         Toast.makeText(getApplicationContext(), "Cantidad Guardada Con Exito", Toast.LENGTH_SHORT).show();
-                        // PENDIENTE RECUPERAR ENCABEZADO
-                        metalesTableLayout.removeAllViews();
+                        metalesEditText.setText("");
+                        int encabezado = 1;
+                        int fin = metalesTableLayout.getChildCount() - 1;
+                        metalesTableLayout.removeViews(encabezado, fin);
                         File fileMetales = new File(getFilesDir(), "metalesGuardados.txt");
                         List<Metales> listaMetales = leerArchivoMetales(fileMetales);
                         addMetal(listaMetales);
@@ -75,6 +77,7 @@ public class MetalesCategoria extends AppCompatActivity {
                 }
             }
         });
+
         metalesBorrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,7 +85,7 @@ public class MetalesCategoria extends AppCompatActivity {
             }
         });
 
-        Button volverMetales = findViewById(R.id.metales_volver_btn);
+        ImageButton volverMetales = findViewById(R.id.metales_volver_btn);
         final Intent intentVolverMetales = new Intent(this, CategoriasMenu.class);
         volverMetales.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,23 +95,27 @@ public class MetalesCategoria extends AppCompatActivity {
         });
     }
 
-    private List<Metales> leerArchivoMetales(File archivo) {
-        List<Metales> listaMetales = new ArrayList<>();
-
-        try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
-            String linea;
-            while ((linea = br.readLine()) != null) {
-                String[] datos = linea.split(",");
-                String fecha = datos[0];
-                float cantidad = Float.parseFloat(datos[1]);
-
-                Metales metal = new Metales(fecha, cantidad);
-                listaMetales.add(metal);
+    private boolean guardarCantidad(String fecha, String cantidad) {
+        File fileMetales = new File(getFilesDir(), "metalesGuardados.txt");
+        try {
+            if (!fileMetales.exists()) {
+                fileMetales.createNewFile();
             }
+
+            FileWriter writer = new FileWriter(fileMetales, true);
+            BufferedWriter bufferedWriter = new BufferedWriter(writer);
+
+            // Crear una instancia de Metales y escribir los datos en el archivo
+            Metales metal = new Metales(fecha, Float.parseFloat(cantidad));
+            String linea = metal.getFechaMetales() + ", " + metal.getCantidadMetales();
+            bufferedWriter.write(linea);
+            bufferedWriter.newLine();
+            bufferedWriter.close();
+            return true; // La Cantidad se guardó correctamente
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return listaMetales;
+        return false; // Error al guardar la cantidad
     }
 
     private void addMetal(List<Metales> listaMetales) {
@@ -133,26 +140,21 @@ public class MetalesCategoria extends AppCompatActivity {
         }
     }
 
-    private boolean guardarCantidad(String fecha, String cantidad) {
-        File fileMetales = new File(getFilesDir(), "metalesGuardados.txt");
-        try {
-            if (!fileMetales.exists()) {
-                fileMetales.createNewFile();
+    private List<Metales> leerArchivoMetales(File archivo) {
+        List<Metales> listaMetales = new ArrayList<>();
+
+        try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
+            String linea;
+            while ((linea = br.readLine()) != null) {
+                String[] datos = linea.split(",");
+                String fecha = datos[0];
+                float cantidad = Float.parseFloat(datos[1]);
+                Metales metal = new Metales(fecha, cantidad);
+                listaMetales.add(metal);
             }
-
-            FileWriter writer = new FileWriter(fileMetales, true);
-            BufferedWriter bufferedWriter = new BufferedWriter(writer);
-
-            // Crear una instancia de Metales y escribir los datos en el archivo
-            Metales metal = new Metales(fecha, Float.parseFloat(cantidad));
-            String linea = metal.getFechaMetales() + ", " + metal.getCantidadMetales();
-            bufferedWriter.write(linea);
-            bufferedWriter.newLine();
-            bufferedWriter.close();
-            return true; // La Cantidad se guardó correctamente
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return false; // Error al guardar la cantidad
+        return listaMetales;
     }
 }

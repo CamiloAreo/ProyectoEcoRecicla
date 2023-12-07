@@ -20,8 +20,8 @@
             android:layout_height="100dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="28dp"
-            android:layout_marginTop="55dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="56dp"
             android:background="@drawable/ecoreciclalogo" />
 
         <View
@@ -49,9 +49,9 @@
             android:layout_width="319dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="41dp"
-            android:layout_marginBottom="574dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="250dp"
             android:text="Cantidad en kilos reciclados del ultimo mes"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -63,9 +63,10 @@
             android:layout_height="213dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="336dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="321dp"
             android:background="@drawable/estadisticas_grafica" />
+
 
         <TextView
             android:id="@+id/volver_lbl"
@@ -73,100 +74,70 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="129dp"
-            android:layout_marginBottom="53dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginBottom="54dp"
             android:text="Volver"
             android:textColor="@color/white"
             android:textSize="26sp" />
 
-
-        <Button
-            android:id="@+id/filtro_btn"
+        <ImageButton
+            android:id="@+id/filtro_categorias_btn"
             android:layout_width="74dp"
             android:layout_height="74dp"
-            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="289dp"
-            android:layout_marginBottom="256dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="237dp"
+            android:background="@drawable/botones_redondeados"
             android:backgroundTint="#149832"
-            app:cornerRadius="20dp" />
-
-        <View
-            android:id="@+id/filtro_img"
-            android:layout_width="46dp"
-            android:layout_height="46dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="63dp"
-            android:layout_marginTop="575dp"
-            android:background="@drawable/filtro_logo" />
+            android:src="@drawable/filtro_logo" />
 
         <TextView
             android:id="@+id/filtro_lbl"
             android:layout_width="226dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="135dp"
-            android:layout_marginBottom="277dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="258dp"
             android:text="Filtrar por Categoría"
             android:textColor="@color/white"
             android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/ajustar_btn"
+        <ImageButton
+            android:id="@+id/ajustar_estadisticas_btn"
             android:layout_width="74dp"
             android:layout_height="74dp"
-            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="289dp"
-            android:layout_marginBottom="168dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="140dp"
+            android:background="@drawable/botones_redondeados"
             android:backgroundTint="#149832"
-            app:cornerRadius="20dp" />
-
-        <View
-            android:id="@+id/ajustar_img"
-            android:layout_width="46dp"
-            android:layout_height="46dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="62dp"
-            android:layout_marginTop="664dp"
-            android:background="@drawable/ajustes_logo" />
+            android:src="@drawable/ajustes_logo" />
 
         <TextView
             android:id="@+id/ajustar_lbl"
             android:layout_width="226dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="135dp"
-            android:layout_marginBottom="177dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="147dp"
             android:text="Ajustar rango de fechas en la gráfica"
             android:textColor="@color/white"
             android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/volver_btn"
+        <ImageButton
+            android:id="@+id/volver_estadisticas_btn"
             android:layout_width="74dp"
             android:layout_height="74dp"
-            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="294dp"
-            android:layout_marginBottom="34dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/botones_redondeados"
             android:backgroundTint="#149832"
-            app:cornerRadius="20dp" />
-
-        <View
-            android:id="@+id/volver_img"
-            android:layout_width="46dp"
-            android:layout_height="46dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="57dp"
-            android:layout_marginTop="797dp"
-            android:background="@drawable/volver_logo" />
-
+            android:src="@drawable/volver_logo" />
     </RelativeLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

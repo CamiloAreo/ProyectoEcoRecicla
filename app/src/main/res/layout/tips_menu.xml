@@ -115,7 +115,7 @@
             android:textColor="@color/white"
             android:textSize="26sp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/tips_volver_btn"
             android:layout_width="74dp"
             android:layout_height="74dp"
@@ -123,9 +123,9 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="294dp"
             android:layout_marginBottom="34dp"
+            android:background="@drawable/botones_redondeados"
             android:backgroundTint="#149832"
-            app:cornerRadius="20dp"
-            app:icon="@drawable/return_icon"/>
+            android:src="@drawable/volver_logo" />
 
     </RelativeLayout>
 

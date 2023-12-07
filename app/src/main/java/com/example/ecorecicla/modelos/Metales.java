@@ -1,9 +1,9 @@
 package com.example.ecorecicla.modelos;
 
 public class Metales {
-
     private String fechaMetales;
     private float cantidadMetales;
+
     public Metales(String fechaMetales, float cantidadMetales) {
         this.fechaMetales = fechaMetales;
         this.cantidadMetales = cantidadMetales;

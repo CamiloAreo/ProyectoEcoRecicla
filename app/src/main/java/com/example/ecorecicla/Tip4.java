@@ -1,12 +1,12 @@
 package com.example.ecorecicla;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -25,7 +25,7 @@ public class Tip4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tip_4);
 
-        Button volver = findViewById(R.id.tip4_volver_btn);
+        ImageButton volver = findViewById(R.id.tip4_volver_btn);
         final Intent intent = new Intent(this, TipsMenu.class);
         volver.setOnClickListener(new View.OnClickListener() {
             @Override

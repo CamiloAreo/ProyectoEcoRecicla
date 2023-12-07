@@ -3,7 +3,7 @@ package com.example.ecorecicla;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,7 +25,7 @@ public class Tip3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tip_3);
 
-        Button volver = findViewById(R.id.tip3_volver_btn);
+        ImageButton volver = findViewById(R.id.tip3_volver_btn);
         final Intent intent = new Intent(this, TipsMenu.class);
         volver.setOnClickListener(new View.OnClickListener() {
             @Override

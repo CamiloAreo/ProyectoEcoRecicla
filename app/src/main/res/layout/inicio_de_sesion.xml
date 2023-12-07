@@ -52,7 +52,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="42dp"
             android:layout_marginBottom="328dp"
-            android:background="@color/white"
+            android:background="@drawable/campo_texto"
             android:textAlignment="center" />
 
         <TextView
@@ -75,9 +75,9 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="42dp"
             android:layout_marginBottom="222dp"
-            android:background="@color/white"
-            android:textAlignment="center"
-            android:inputType="textPassword"/>
+            android:background="@drawable/campo_texto"
+            android:inputType="textPassword"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/olvidaste_txv"

@@ -54,7 +54,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="42dp"
             android:layout_marginBottom="592dp"
-            android:background="@color/white"
+            android:background="@drawable/campo_texto"
             android:textAlignment="center" />
 
         <TextView
@@ -77,7 +77,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="42dp"
             android:layout_marginBottom="499dp"
-            android:background="@color/white"
+            android:background="@drawable/campo_texto"
             android:textAlignment="center" />
 
         <TextView
@@ -100,7 +100,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="42dp"
             android:layout_marginBottom="398dp"
-            android:background="@color/white"
+            android:background="@drawable/campo_texto"
             android:textAlignment="center" />
 
         <TextView
@@ -123,7 +123,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="42dp"
             android:layout_marginBottom="294dp"
-            android:background="@color/white"
+            android:background="@drawable/campo_texto"
             android:inputType="textPassword"
             android:textAlignment="center" />
 
@@ -147,7 +147,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="42dp"
             android:layout_marginBottom="193dp"
-            android:background="@color/white"
+            android:background="@drawable/campo_texto"
             android:inputType="textPassword"
             android:textAlignment="center" />
 
@@ -176,7 +176,7 @@
             android:textColor="@color/white"
             android:textSize="26sp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/registro_volver_btn"
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -184,8 +184,8 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="308dp"
             android:layout_marginBottom="44dp"
+            android:background="@drawable/botones_redondeados"
             android:backgroundTint="#149832"
-            app:cornerRadius="20dp"
-            app:icon="@drawable/return_icon" />
+            android:src="@drawable/volver_logo" />
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

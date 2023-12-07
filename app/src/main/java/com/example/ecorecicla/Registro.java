@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -67,7 +68,7 @@ public class Registro extends AppCompatActivity {
             }
         });
 
-        Button volver = findViewById(R.id.registro_volver_btn);
+        ImageButton volver = findViewById(R.id.registro_volver_btn);
         final Intent intentVolver = new Intent(this, InicioDeSesion.class);
         volver.setOnClickListener(new View.OnClickListener() {
             @Override

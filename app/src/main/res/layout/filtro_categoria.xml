@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CategoriasMenu">
+    tools:context=".FiltroCategoria">
 
     <RelativeLayout
         android:id="@+id/InicioDeSesion"
@@ -36,13 +36,13 @@
 
 
         <Button
-            android:id="@+id/papel_btn"
+            android:id="@+id/papel_filtro_btn"
             android:layout_width="145dp"
             android:layout_height="145dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_marginStart="44dp"
-            android:layout_marginBottom="455dp"
+            android:layout_marginTop="220dp"
             android:backgroundTint="#149832"
             android:src="@drawable/ecoreciclalogo"
             android:text="Papel"
@@ -51,13 +51,13 @@
             app:cornerRadius="20dp" />
 
         <Button
-            android:id="@+id/plasticos_btn"
+            android:id="@+id/plasticos_filtro_btn"
             android:layout_width="145dp"
             android:layout_height="145dp"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
+            android:layout_marginTop="220dp"
             android:layout_marginEnd="44dp"
-            android:layout_marginBottom="455dp"
             android:backgroundTint="#149832"
             android:text="Plásticos"
             android:textAlignment="center"
@@ -65,13 +65,13 @@
             app:cornerRadius="20dp" />
 
         <Button
-            android:id="@+id/vidrio_btn"
+            android:id="@+id/vidrio_filtro_btn"
             android:layout_width="145dp"
             android:layout_height="145dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_marginStart="44dp"
-            android:layout_marginBottom="280dp"
+            android:layout_marginTop="395dp"
             android:backgroundTint="#149832"
             android:text="Vidrio"
             android:textAlignment="center"
@@ -79,13 +79,13 @@
             app:cornerRadius="20dp" />
 
         <Button
-            android:id="@+id/metales_btn"
+            android:id="@+id/metales_filtro_btn"
             android:layout_width="145dp"
             android:layout_height="145dp"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_marginEnd="44dp"
-            android:layout_marginBottom="280dp"
+            android:layout_marginTop="395dp"
             android:backgroundTint="#149832"
             android:text="Metales"
             android:textAlignment="center"
@@ -93,51 +93,18 @@
             app:cornerRadius="20dp" />
 
         <Button
-            android:id="@+id/agregar_btn"
-            android:layout_width="150dp"
-            android:layout_height="145dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="128dp"
-            android:layout_marginBottom="112dp"
-            android:backgroundTint="#149832"
-            android:text="Agregar Nueva Categoría"
-            android:textAlignment="center"
-            android:textSize="22sp"
-            app:cornerRadius="20dp" />
-
-        <View
-            android:id="@+id/tipsLogo_img"
-            android:layout_width="350dp"
-            android:layout_height="58dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="27dp"
-            android:layout_marginTop="173dp"
-            android:background="@drawable/categorias_titulo" />
-
-        <TextView
-            android:id="@+id/volver_lbl"
-            android:layout_width="wrap_content"
+            android:id="@+id/cancelar_filtro_btn"
+            android:layout_width="165dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="129dp"
-            android:layout_marginBottom="53dp"
-            android:text="Volver"
-            android:textColor="@color/white"
-            android:textSize="26sp" />
-
-        <ImageButton
-            android:id="@+id/categorias_volver_btn"
-            android:layout_width="74dp"
-            android:layout_height="74dp"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="294dp"
-            android:layout_marginBottom="34dp"
-            android:background="@drawable/botones_redondeados"
-            android:backgroundTint="#149832"
-            android:src="@drawable/volver_logo" />
+            android:layout_marginTop="574dp"
+            android:layout_marginEnd="123dp"
+            android:backgroundTint="@color/black"
+            android:text="CANCELAR"
+            android:textSize="18sp"
+            app:cornerRadius="10dp" />
+
     </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

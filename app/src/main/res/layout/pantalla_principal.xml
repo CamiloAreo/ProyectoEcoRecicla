@@ -139,7 +139,7 @@
             android:textColor="@color/white"
             android:textSize="26sp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/cerrar_btn"
             android:layout_width="74dp"
             android:layout_height="74dp"
@@ -147,11 +147,12 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="51dp"
             android:layout_marginBottom="43dp"
+            android:background="@drawable/botones_redondeados"
             android:backgroundTint="#149832"
+            android:src="@drawable/cerrar_sesion_logo"
             android:text=""
             android:textAlignment="textEnd"
             android:textSize="24sp"
-            app:cornerRadius="20dp"
-            app:icon="@drawable/logout" />
+            app:cornerRadius="20dp" />
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

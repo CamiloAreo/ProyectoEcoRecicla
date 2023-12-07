@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,9 +29,14 @@ public class OlvidoNotificacion1 extends AppCompatActivity {
         enviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Usuario nuevoCorreo = new Usuario(correoOlvido.getText().toString());
-                guardarCorreo(nuevoCorreo);
-                startActivity(intentEnviar);
+                if (!correoOlvido.getText().toString().isEmpty()) {
+                    Usuario nuevoCorreo = new Usuario(correoOlvido.getText().toString());
+                    guardarCorreo(nuevoCorreo);
+                    startActivity(intentEnviar);
+                } else {
+                    Toast.makeText(getApplicationContext(), "El Campo No puede estar vacíos",
+                            Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -43,14 +49,16 @@ public class OlvidoNotificacion1 extends AppCompatActivity {
             }
         });
     }
-    private void guardarCorreo(Usuario correoOlvidado){
-        File file = new File(getFilesDir(),"correosOlvidos.txt");
+
+    private void guardarCorreo(Usuario correoOlvidado) {
+        File file = new File(getFilesDir(), "correosOlvidos.txt");
 
         try {
             FileWriter writer = new FileWriter(file, true);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
-            String nuevocorreoOlvidado = correoOlvidado.getCorreo();
-            bufferedWriter.write(nuevocorreoOlvidado);
+            String nuevoCorreoOlvidado = correoOlvidado.getCorreo();
+            bufferedWriter.write(nuevoCorreoOlvidado);
+            bufferedWriter.newLine();
             bufferedWriter.close();
 
         } catch (IOException e) {

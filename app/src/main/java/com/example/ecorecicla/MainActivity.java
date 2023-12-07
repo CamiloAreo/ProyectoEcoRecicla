@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         if (!fileDatos.exists()) {
             try {
                 FileWriter writer = new FileWriter(fileDatos);
-                writer.append("root,root@root.com,toor,TOOR\n");
+                writer.append("user,User@email.com\n");
                 writer.flush();
                 writer.close();
             } catch (IOException e) {
@@ -135,20 +135,61 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        // Crear archivo para registro de metales
-        File fileMetales = new File(getFilesDir(), "metalesGuardados.txt");
+        // Crear archivo para registro de Papel
+        File filePapel = new File(getFilesDir(), "papelGuardados.txt");
         try {
-            FileWriter writer = new FileWriter(fileMetales);
-            writer.append("20/10/2023 08:10 AM, 2.5\n");
-            writer.append("22/10/2023 09:00 PM, 6.8\n");
-            writer.append("24/10/2023 03:00 PM, 4.1\n");
-            writer.append("25/10/2023 12:20 PM, 10.3\n");
-            writer.append("27/10/2023 01:30 PM, 1.6\n");
+            FileWriter writer = new FileWriter(filePapel);
+            writer.append("19/11/2023 08:10 PM, 9.5\n");
+            writer.append("20/11/2023 10:00 AM, 3.8\n");
+            writer.append("22/11/2023 01:50 PM, 6.7\n");
+            writer.append("26/11/2023 12:20 PM, 10.3\n");
             writer.flush();
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
+        // Crear archivo para registro de Plasticos
+        File filePlasticos = new File(getFilesDir(), "plasticosGuardados.txt");
+        try {
+            FileWriter writer = new FileWriter(filePlasticos);
+            writer.append("19/11/2023 08:15 PM, 9.5\n");
+            writer.append("20/11/2023 10:05 AM, 3.8\n");
+            writer.append("22/11/2023 01:55 PM, 6.7\n");
+            writer.append("26/11/2023 12:25 PM, 10.3\n");
+            writer.flush();
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Crear archivo para registro de Vidrio
+        File fileVidrio = new File(getFilesDir(), "vidrioGuardados.txt");
+        try {
+            FileWriter writer = new FileWriter(fileVidrio);
+            writer.append("25/11/2023 04:14 PM, 5.9\n");
+            writer.append("26/11/2023 12:04 AM, 8.7\n");
+            writer.append("27/11/2023 03:54 PM, 7.6\n");
+            writer.append("30/11/2023 12:24 PM, 13.7\n");
+            writer.flush();
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Crear archivo para registro de metales
+        File fileMetales = new File(getFilesDir(), "metalesGuardados.txt");
+        try {
+            FileWriter writer = new FileWriter(fileMetales);
+            writer.append("20/11/2023 08:10 AM, 2.5\n");
+            writer.append("22/11/2023 09:00 PM, 6.8\n");
+            writer.append("24/11/2023 03:00 PM, 4.1\n");
+            writer.append("25/11/2023 12:20 PM, 10.3\n");
+            writer.append("27/11/2023 01:30 PM, 1.6\n");
+            writer.flush();
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

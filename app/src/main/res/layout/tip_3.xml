@@ -42,7 +42,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="25dp"
             android:layout_marginBottom="160dp"
-            android:background="@color/white"
+            android:background="@drawable/campo_texto"
             android:textAlignment="center"
             android:textSize="24sp" />
 
@@ -68,7 +68,7 @@
             android:textColor="@color/white"
             android:textSize="26sp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/tip3_volver_btn"
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -76,8 +76,8 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="308dp"
             android:layout_marginBottom="44dp"
+            android:background="@drawable/botones_redondeados"
             android:backgroundTint="#149832"
-            app:cornerRadius="20dp"
-            app:icon="@drawable/return_icon" />
+            android:src="@drawable/volver_logo" />
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
